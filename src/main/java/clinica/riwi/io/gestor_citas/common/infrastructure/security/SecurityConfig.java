@@ -1,4 +1,4 @@
-package com.riwi.logistic_pallet.common.infrastructure.security;
+package clinica.riwi.io.gestor_citas.common.infrastructure.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -16,15 +16,15 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.riwi.logistic_pallet.users.domain.Roles;
+import clinica.riwi.io.gestor_citas.users.domain.Roles;
 
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
 
         private final String[] PUBLIC_ENDPOINTS = { "/auth/**", "/swagger-ui/**",
-                        "/api-docs/v3/**", "/loads/{id}" };
-        private final String[] ADMIN_ENDPOINTS = { "/pallets/**" };
+                        "/api-docs/v3/**", "/api/**" };
+        private final String[] DOCTOR_ENDPOINTS = {};
 
         @Autowired
         private UserDetailsService userDetailsService;
@@ -57,7 +57,7 @@ public class SecurityConfig {
                 return http.csrf(csrf -> csrf.disable())
                                 .authorizeHttpRequests(request -> request
                                                 .requestMatchers(PUBLIC_ENDPOINTS).permitAll()
-                                                .requestMatchers(ADMIN_ENDPOINTS).hasAuthority(Roles.ADMIN.name())
+                                                .requestMatchers(DOCTOR_ENDPOINTS).hasAuthority(Roles.DOCTOR.name())
                                                 .anyRequest().authenticated())
                                 .authenticationProvider(authenticationProvider())
                                 .sessionManagement(sessionManager -> sessionManager

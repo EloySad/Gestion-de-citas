@@ -1,4 +1,4 @@
-package com.riwi.logistic_pallet.common.infrastructure.security;
+package clinica.riwi.io.gestor_citas.common.infrastructure.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -6,8 +6,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 
-import com.riwi.logistic_pallet.users.domain.UserEntity;
-import com.riwi.logistic_pallet.users.domain.UserRepository;
+import clinica.riwi.io.gestor_citas.users.domain.UserEntity;
+import clinica.riwi.io.gestor_citas.users.domain.UserRepository;
 
 @Component
 public class UserDetailsServiceImpl implements UserDetailsService {

@@ -1,6 +1,6 @@
-package com.riwi.logistic_pallet.users.domain;
+package clinica.riwi.io.gestor_citas.users.domain;
 
 public enum Roles {
-    ADMIN,
-    CARRIER
+    DOCTOR,
+    PATIENT
 }

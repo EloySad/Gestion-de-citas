@@ -1,4 +1,4 @@
-package com.riwi.logistic_pallet.common.infrastructure.persistence;
+package clinica.riwi.io.gestor_citas.common.infrastructure.persistence;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;

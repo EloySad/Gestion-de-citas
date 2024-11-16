@@ -1,6 +1,8 @@
-package com.riwi.logistic_pallet.users.domain;
+package clinica.riwi.io.gestor_citas.users.domain;
 
-import com.riwi.logistic_pallet.common.domain.AuditableEntity;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import clinica.riwi.io.gestor_citas.common.domain.AuditableEntity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -32,6 +34,7 @@ public class UserEntity extends AuditableEntity {
   @Column(nullable = false, unique = true)
   private String email;
 
+  @JsonIgnore
   @Column(nullable = false)
   private String password;
 

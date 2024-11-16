@@ -1,4 +1,4 @@
-package com.riwi.logistic_pallet.users.application;
+package clinica.riwi.io.gestor_citas.users.application;
 
 import java.util.Optional;
 import java.util.Map;
@@ -14,13 +14,13 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
 
-import com.riwi.logistic_pallet.common.infrastructure.security.JwtUtils;
-import com.riwi.logistic_pallet.common.infrastructure.security.UserDetailsImpl;
-import com.riwi.logistic_pallet.users.domain.Roles;
-import com.riwi.logistic_pallet.users.domain.UserEntity;
-import com.riwi.logistic_pallet.users.domain.UserRepository;
-import com.riwi.logistic_pallet.users.infrastructure.dtos.request.LoginUserDto;
-import com.riwi.logistic_pallet.users.infrastructure.dtos.request.RegisterUserDto;
+import clinica.riwi.io.gestor_citas.common.infrastructure.security.JwtUtils;
+import clinica.riwi.io.gestor_citas.common.infrastructure.security.UserDetailsImpl;
+import clinica.riwi.io.gestor_citas.users.domain.Roles;
+import clinica.riwi.io.gestor_citas.users.domain.UserEntity;
+import clinica.riwi.io.gestor_citas.users.domain.UserRepository;
+import clinica.riwi.io.gestor_citas.users.infrastructure.dtos.request.LoginUserDto;
+import clinica.riwi.io.gestor_citas.users.infrastructure.dtos.request.RegisterUserDto;
 
 @Service
 public class AuthService {

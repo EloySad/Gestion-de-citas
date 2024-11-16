@@ -1,4 +1,4 @@
-package com.riwi.logistic_pallet.common.infrastructure.exception_handlers;
+package clinica.riwi.io.gestor_citas.common.infrastructure.exception_handlers;
 
 import org.springframework.http.ProblemDetail;
 import org.springframework.web.bind.annotation.ExceptionHandler;

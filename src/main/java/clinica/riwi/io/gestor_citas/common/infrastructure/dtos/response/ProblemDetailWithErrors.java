@@ -1,4 +1,4 @@
-package com.riwi.logistic_pallet.common.infrastructure.dtos.response;
+package clinica.riwi.io.gestor_citas.common.infrastructure.dtos.response;
 
 import org.springframework.http.ProblemDetail;
 

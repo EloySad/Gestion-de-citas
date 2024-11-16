@@ -1,4 +1,4 @@
-package com.riwi.logistic_pallet.common.domain;
+package clinica.riwi.io.gestor_citas.common.domain;
 
 import java.time.LocalDateTime;
 
@@ -8,7 +8,7 @@ import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import com.riwi.logistic_pallet.users.domain.UserEntity;
+import clinica.riwi.io.gestor_citas.users.domain.UserEntity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;

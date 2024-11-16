@@ -1,4 +1,4 @@
-package com.riwi.logistic_pallet.common.infrastructure.validators.enums;
+package clinica.riwi.io.gestor_citas.common.infrastructure.validators.enums;
 
 import java.util.Arrays;
 

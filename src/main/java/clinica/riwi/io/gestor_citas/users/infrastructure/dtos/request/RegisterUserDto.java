@@ -1,7 +1,7 @@
-package com.riwi.logistic_pallet.users.infrastructure.dtos.request;
+package clinica.riwi.io.gestor_citas.users.infrastructure.dtos.request;
 
-import com.riwi.logistic_pallet.common.infrastructure.validators.enums.ValidEnum;
-import com.riwi.logistic_pallet.users.domain.Roles;
+import clinica.riwi.io.gestor_citas.common.infrastructure.validators.enums.ValidEnum;
+import clinica.riwi.io.gestor_citas.users.domain.Roles;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
@@ -27,7 +27,7 @@ public class RegisterUserDto {
     @Pattern(regexp = "[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?", message = "Email must be valid")
     private String email;
 
-    @Schema(example = "JohnDoe1234*", description = "Password of the user with at least one uppercase letter, one lowercase letter, one number, and one special character")
+    @Schema(example = "MyPassword.12*", description = "Password of the user with at least one uppercase letter, one lowercase letter, one number, and one special character")
     @NotBlank(message = "Password cannot be blank")
     @Pattern(regexp = "(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d @$!%*?&]{8,}$", message = "Password must include at least one uppercase letter, one lowercase letter, one number, and one special character")
     private String password;

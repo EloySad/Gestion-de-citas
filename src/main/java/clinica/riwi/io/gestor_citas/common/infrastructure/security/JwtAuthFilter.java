@@ -1,4 +1,4 @@
-package com.riwi.logistic_pallet.common.infrastructure.security;
+package clinica.riwi.io.gestor_citas.common.infrastructure.security;
 
 import java.io.IOException;
 

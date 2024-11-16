@@ -1,6 +1,6 @@
-package com.riwi.logistic_pallet.users.infrastructure.dtos.response;
+package clinica.riwi.io.gestor_citas.users.infrastructure.dtos.response;
 
-import com.riwi.logistic_pallet.common.infrastructure.dtos.response.ApiResponseDto;
+import clinica.riwi.io.gestor_citas.common.infrastructure.dtos.response.ApiResponseDto;
 
 import lombok.Getter;
 import lombok.experimental.SuperBuilder;

@@ -1,4 +1,4 @@
-package com.riwi.logistic_pallet.common.infrastructure.open_api;
+package clinica.riwi.io.gestor_citas.common.infrastructure.open_api;
 
 import java.util.Collections;
 

@@ -1,4 +1,4 @@
-package com.riwi.logistic_pallet.common.infrastructure.security;
+package clinica.riwi.io.gestor_citas.common.infrastructure.security;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -7,7 +7,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.riwi.logistic_pallet.users.domain.UserEntity;
+import clinica.riwi.io.gestor_citas.users.domain.UserEntity;
 
 public class UserDetailsImpl implements UserDetails {
 
